@@ -34,8 +34,7 @@
   (->> data
        data-to-coords
        frequencies
-       (filter (fn [[k v]] (> v 1)))
-       count))
+       (transduce (map (fn [[k v]] (if (> v 1) 1 0))) +)))
 
 (defn part-2 []
   (let [claim-counts (->> data data-to-coords (map coord->kw) sort frequencies)]
