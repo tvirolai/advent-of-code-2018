@@ -5,5 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.9.0"]
                  [clj-fuzzy "0.4.1"]
+                 [org.clojure/math.numeric-tower "0.0.4"]
                  [net.mikera/core.matrix "0.62.0"]]
   :jvm-opts ["-Xmx2g"])
